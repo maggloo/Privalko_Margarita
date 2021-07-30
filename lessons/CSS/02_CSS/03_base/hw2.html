@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu{
+            width: 15em;
+            background-color:lightgray;
+            float: left;
+        }
+        .article1{
+            background-color: grey;
+            margin-bottom: .2em;
+            margin-left:auto;
+            padding-top: 1px;
+        }    
+        .article2{
+            background-color: grey;
+            margin-bottom: .2em;
+            margin-left:240px;
+            padding-top: 1px;
+        }
+        .img{
+            float: right;
+        }
+        .clear{
+            height: 2px;
+            clear: both;
+        }
+        .footer{
+            background-color:lightgray;
+            clear: both;
+           max-height: min-content;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color:ghostwhite;">
+        <div class="menu">
+            <h2>Блок навигации</h2>
+            <ul>
+                <li>Ширина 15em</li>
+                <li>Должен присутствовать цвет фона</li>
+                <li>Располагается слева</li>
+                <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере. </li>
+            </ul>
+        </div>
+        <div class="article1">
+            <h2>Статья 1</h2>
+            Размер блока: <br>
+            Занимает всю доступную ширину <br>
+            Должен присутствовать цвет фона <br>
+            Во всех статьях сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom <br>
+        </div>
+        <div class="article2">
+            <h2>Статья 2</h2>
+            Размер блока: <br>
+            Занимает всю доступную ширину <br>
+            Должен присутствовать цвет фона <br>
+            Во всех статьях сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom. Картинка вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой картинки. <br>
+            <img src="icon_mail.png" class="img">
+            <div class="clear"></div>
+        </div>
+        <div class="footer">
+            Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.
+        </div>
+    </div>
+</body>
+</html>
