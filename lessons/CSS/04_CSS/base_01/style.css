@@ -1,0 +1,27 @@
+.link::before{
+    content: url(extref.png);
+}
+.pdf::after{
+    content: url(logo-pdf.png);
+}
+.zip::after{
+    content:url(logo-zip.gif)
+}
+.doc::after{
+    content: url(logo-doc.jpg);
+}
+li{
+    list-style: none;
+}
+li::before{
+    content: url(logo-list.jpg);
+}
+.li1:hover>a::after {
+    content: url(logo-doc.jpg);
+}
+.li2:hover>a::after {
+    content: url(logo-pdf.png);
+}
+.li3:hover>a::after {
+    content: url(logo-zip.gif);
+}

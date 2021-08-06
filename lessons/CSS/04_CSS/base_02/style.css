@@ -1,0 +1,40 @@
+tr{
+    border-style: dotted;
+    border-width: 1px
+}
+th{
+    border-style: dotted;
+    border-width: 1px
+}
+td{
+    border-style: dotted;
+    border-width: 1px
+}
+table{
+    border-collapse: collapse;
+}
+tr:first-child{
+    background-color: gray;
+    color: white;
+}
+tr:nth-child(3){
+    background-color: lightgrey;
+}
+tr:nth-child(5){
+    background-color: lightgrey;
+}
+caption{
+    caption-side: bottom;
+}
+tr>th{
+    text-align: left;
+}
+tr:first-child > th{
+    text-align: center;
+}
+tr:hover{
+    background-color: darkgray;
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+}

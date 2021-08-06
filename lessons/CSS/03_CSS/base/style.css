@@ -1,0 +1,84 @@
+.warp{
+    text-align: center;
+    width: 100%;
+  }
+.MenuLevel1{
+    display: inline-block;
+    list-style: none;
+  }
+.MenuLevel1 > li{
+    width: 100px;
+    display: inline-block;  
+    border: 1px solid black;
+    position: relative;
+    background-color: lightgray; 
+    color: gray;
+    margin: -2px;
+    padding: 5px;
+  }
+.MenuLevel1 > li:hover {
+    color: lightgray;
+    background-color: gray
+  }
+.MenuLevel1 > li:hover > ul.MenuLevel2{
+    display: block;
+}
+.MenuLevel2{
+    display: none;
+    position: absolute;
+    top: 100%;
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+    z-index: 1;
+    background-color: lightgray;
+    color: gray;
+}
+.MenuLevel2 > li {
+    width: 100px;
+    padding: 10px 20px; 
+    color: inherit;
+    border: 1px solid black; 
+}
+@media all and (max-width: 760px){
+    .warp{
+        width: 100px;
+      }
+    .MenuLevel1{
+        list-style: none;
+      }
+    .MenuLevel1 > li{
+        width: 100px;
+        display: inline-block;  
+        border: 1px solid black;
+        position: relative;
+        background-color: lightgray; 
+        color: gray;
+        margin: -2px;
+        padding: 5px;
+      }
+    .MenuLevel1 > li:hover {
+        color: lightgray;
+        background-color: gray
+      }
+    .MenuLevel1 > li:hover > ul.MenuLevel2{
+        display: block;
+    }
+    .MenuLevel2{
+        display: none;
+        position: absolute;
+        top: 100%;
+        list-style: none;
+        padding-left: 0;
+        text-align: left;
+        z-index: 1;
+        background-color: lightgray;
+        color: gray;
+    }
+    .MenuLevel2 > li {
+        width: 100px;
+        padding: 10px 20px; 
+        color: inherit;
+        border: 1px solid black; 
+    }
+}
